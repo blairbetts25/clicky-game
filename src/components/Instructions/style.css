@@ -1,0 +1,15 @@
+.instructions{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 50px;
+    margin-top:57px;
+    background-color: purple;
+    height:15rem;
+    position: inherit;
+  }
+  .instructions h2{
+    font-size: 4rem;
+    font-weight:bold;
+  }
