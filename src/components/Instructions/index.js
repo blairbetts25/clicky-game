@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 function Instructions(props) {
-  return <h1 className="instructions">{props.children}</h1>;
+  return <div className="instructions">{props.children}</div>;
 }
 
 export default Instructions;

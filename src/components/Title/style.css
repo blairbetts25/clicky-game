@@ -9,12 +9,13 @@
     top:0;
     height:4rem;
     float:left;
-    list-style-type: none;
+    
   }
   .brand{
     float:left;
     padding-left: 16rem;
     padding-right:4rem;
+    list-style-type: none;
   }
  
  
