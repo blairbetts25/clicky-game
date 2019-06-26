@@ -13,6 +13,49 @@ class App extends Component {
     highScore: 0,
     status: "Click an image to start!"
   };
+  correctStatus = () => {
+    switch (this.state.count) {
+      case 0:
+        this.setState({status: "You guessed correctly!"})
+        break;
+      case 1:
+          this.setState({status: "You got 2 in a row!"})
+        break;
+      case 2:
+          this.setState({status: "You got 3 in a row!"})
+        break;
+        case 3:
+          this.setState({status: "You got 4 in a row!"})
+        break;
+        case 4:
+          this.setState({status: "You got 5 in a row!"})
+        break;
+        case 5:
+          this.setState({status: "You got 6 in a row!"})
+        break;
+        case 6:
+          this.setState({status: "You got 7 in a row!"})
+        break;
+        case 7:
+          this.setState({status: "You got 8 in a row!"})
+        break;
+        case 8:
+          this.setState({status: "You got 9 in a row!"})
+        break;
+        case 9:
+          this.setState({status: "You got 10 in a row!"})
+        break;
+        case 10:
+          this.setState({status: "You got 11 in a row!"})
+        break;
+        case 11:
+          this.setState({status: "You got them all right!"})
+        break;
+      default:
+        console.log(this.state.status)
+        break;
+    }
+  }
   shuffle = (array) => {
     array.sort(() => Math.random() - Math.random())
   };
@@ -37,10 +80,11 @@ class App extends Component {
     } else {
       var stateCopy = Object.assign({}, this.state);
       stateCopy.cards[id - 1].clicked = true
-      this.setState(stateCopy)
+      this.setState(stateCopy);
       this.counter();
       let arr = this.state.cards;
-      this.shuffle(arr)
+      this.shuffle(arr);
+      this.correctStatus();
     }
   }
 
